@@ -1,0 +1,144 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+
+%\setlength{\textwidth}{5.1in} % set width of text portion
+%\addtolength{\topmargin}{-.65in} % Set margin top 
+%\addtolength{\textheight}{1.75in} % Set margin bottom
+\usepackage[letterpaper, tmargin=.10in, bmargin=.10in, lmargin = .25in, rmargin=1.75in, marginparwidth=0in]{geometry}
+
+
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Alexander S. Rosengarten}
+% Draw a horizontal line the whole width of resume:
+
+ \moveleft\hoffset\vbox{\hrule width 7.5in height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{PO Box 231048, Encinitas CA 92024    |  alexrosengarten@gmail.com | github.com/alxrsngrtn}
+
+
+
+\section{TECHNICAL \\ SKILLS} 
+	
+%\begin{tabular}{l l l}
+% 								Experience & Languages & Technologies \\ \hline
+%								Adept	&   \parbox[t]{2.4in}{Python, Java, Javascript, C/C++,  Matlab/Julia}   & %\parbox[t]{2.4in}{Numpy/Pandas, Angular.js, Webpack, Git, Theano, Jet Brains IDEs} \\
+%								Proficient &  \parbox[t]{2.4in}{C\#, Scala} & \parbox[t]{2.4in}{Docker, Express.js, Ionic/%Cordova, SQL, Apache Spark, Spring MVC, }\\ % Hadoop
+%								% Adobe Creative Suite, Android Studio, Arduino, Eclipse, GDB, Git, Unix, Vim
+%\end{tabular}
+\begin{tabular}{l l}
+Languages & Python, Java, Javascript, C/C++, Matlab/Octave/Julia, Scala, C\# \\
+Frontend & Angular.js, Jasmine, Ionic/Cordova, Grunt/Gulp, Webpack, SocketIO \\
+Backend & PostgreSQL, Express.js, Django/Flask, Spring MVC \\
+Data & Numpy/Pandas, Scikit-Learn, Lasagne/Theano/Keras, Apache Spark \\
+Environment & Git, Docker, Unix/Windows, Jet Brains IDEs, Visual Studio,  SVM, Perforce
+\end{tabular}
+%\section{SOFT \\ SKILLS}
+%Strong analytical \& problem solving ability, Quick learner, Self-motivated, Excellent communicator 
+
+% Talk about the challenge that had to be done, the  actions that you took to tackle the challenge, and the results (how things outside of yourself were experienced)		
+\section{WORK EXPERIENCE} 
+		{\sl Software Engineer} \hfill            August 2016 - Present \\
+                Intuit, San Diego, CA
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Developing C\# and C++ features for ProSeries, professional Windows desktop tax software. 
+                 \item Following Test Driven Development and strict Agile software development process.
+                 \item Managing {\sl Code Complete} book club to improve the engineering ability of team.
+                 \item Wrote Python tool that uses language modeling and statistics to analyze application crash logs. 
+                 \end{itemize} 
+
+
+		{\sl Software Engineering Intern} \hfill            March - August 2016 \\
+                Ingenu, San Diego, CA
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Developed single-page web application with Angular 1 framework.
+                 \item Prototyped, designed, and developed RSS feed sanitizer and aggregator (Spring MVC, Angular).
+                 \item Set up unit test runner (Karma). Wrote unit and integration tests (Jasmine,  Protractor/Selenium).
+                 \item Reduced application load time by 44\% and KB size by 40\% via minification, lazy loading, and CDN.
+                 \end{itemize} 
+	
+		{\sl Principal Frontend Engineer} \hfill            December 2015 - June 2016 \\
+                Guardiome, La Jolla, CA
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Developed GUI for a genome exploration tool from scratch (Python). 
+                 \item Integrated with bioinformatics software on a secure, embedded hardware system (Debian).
+                 \end{itemize} 
+
+		{\sl Research Assistant} \hfill            June 2013 - September 2015 \\
+                Natural Computation Laboratory, UCSD Dept. of Cognitive Science, La Jolla, CA
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Developed BrainTag: open source neurofeedback game for children with Autism (Arduino, C). 
+                 \item Created hands-on workshops to teach brain computer interface technology (OpenBCI, Python).
+                 %\item Wrote data visualization and machine learning toolbox for open source brain-computer interface system (Python, Java, C, Javascript). 
+                 \end{itemize} 
+	
+		%{\sl Computer Science Tutor} \hfill 	April - June 2013, August 2014 \\
+		%UCSD Computer Science Department, La Jolla, CA
+                 %\begin{itemize}  \itemsep -2pt % reduce space between 
+                 %\item Spring 2013, Matlab Programming: Tutored students, debugged code, graded exams and assignments.
+                 %\item Summer 2014, Systems Programing: Tutored students in C and ARM Assembly programming course, implemented on Raspberry Pi. Found errors and debugged code (ARM, C, Raspberry Pi). 
+                 %\end{itemize}
+                 
+                %{\sl Research Programmer} \hfill            July - December 2012 \\
+                %Radiology Laboratory, UCSD School of Medicine, Sorrento Valley, CA
+                 %\begin{itemize}  \itemsep -2pt %reduce space between items
+                 %\item Performed computer aided statistical analysis and data visualization of MRI data (Matlab, FreeSurer).
+                 %\item Collected EEG and MEG data.
+                 %\end{itemize} 
+                
+
+  \section{EDUCATION} University of California, San Diego, La Jolla, CA \hfill   June 2016 \\
+		  {\sl B.S.} Computer Science  (Major GPA: 3.63) \& {\sl B.S.} Cognitive Science (Major GPA: 3.64). Overall GPA: 3.45      
+
+    
+\section{PROJECTS}
+                 % include quantitative results
+                {\sl Forward 135 - Full Stack Developer} \hfill 	 April - June 2016 \\
+                Server-Side Web Applications Course, La Jolla, CA 
+                 \begin{itemize}  \itemsep -2pt % reduce space between items
+                 \item Built a full-stack architecture for efficient change propagation from the server to the client, part of a research/class project. Worked in a team of three.
+                 \item Project only sends the changes in a database to each client via WebSockets (Javascript ES6, Webpack, Socket.io). 
+                 \item Performed Incremental View Maintenance via materialized views and database triggers (PostgreSQL). 
+                 \end{itemize}
+                 
+		 {\sl In-Ear EEG - Software Team Member} \hfill 	 April - June 2015 \\
+                Embedded Systems Project Course, La Jolla, CA 
+                 \begin{itemize}  \itemsep -2pt % reduce space between items
+                 \item Worked in team to create In-Ear EEG device for people with epilepsy.
+                 \item Wrote machine learning code with a partner to detect presence of epileptic seizures (Matlab, OpenBCI).
+                 \item Built server that stored 20 minutes of brainwave data once seizures are detected (Python, SQLite). 
+                 \end{itemize}
+                
+\section{COURSEWORK}
+   
+   \begin{tabular}{l l l}
+   $\bullet$ Advanced Data Structures  & $\bullet$ Advanced Machine Learning & $\bullet$ Algorithms \\
+   $\bullet$ Compiler Construction & $\bullet$ Computer Vision & $\bullet$ Neural Networks \\ 
+   $\bullet$ Operating Systems  &  $\bullet$ Programming Languages & $\bullet$ Server-Side Web Applications  \\
+     
+    \end{tabular}
+     %\footnotetext[1]{Left early for medical reasons}
+    %\footnotetext[1]{Currently Enrolled}
+  
+                 
+\section{ AWARDS \& ACTIVITIES }  
+	    Third Place Winner, {\it IEEE Brain Computer Interface Hackathon} \hfill September 2016\\  
+   	    Founding Member, {\it Data Science Student Society} \hfill November 2014 - September 2015 \\
+	    Summer Research Scholar, {\it Qualcomm Institute/Calit2} \hfill June - August 2013 \\         
+            President, {\it Cognitive Science Student Association} \hfill August 2012 - January 2014 \\
+            
+%\end{resume}
+\end{document}
+
+
+
+
+
+
+
