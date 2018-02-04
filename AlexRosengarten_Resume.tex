@@ -4,10 +4,14 @@
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 
 
-%\setlength{\textwidth}{5.1in} % set width of text portion
-%\addtolength{\topmargin}{-.65in} % Set margin top 
-%\addtolength{\textheight}{1.75in} % Set margin bottom
-\usepackage[letterpaper, tmargin=.10in, bmargin=.10in, lmargin = .25in, rmargin=1.75in, marginparwidth=0in]{geometry}
+%\topmargin=-.10in
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+%\itemsep=0in
+%\parsep=0in
+
+\usepackage[letterpaper, tmargin=.10in, bmargin=.10in, lmargin = .25in, rmargin=1.75in, marginparwidth=.01in]{geometry}
 
 
 
@@ -20,13 +24,16 @@
  \moveleft\hoffset\vbox{\hrule width 7.5in height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{PO Box 231048, Encinitas CA 92024    |  alexrosengarten@gmail.com | github.com/alxrsngrtn}
+ \moveleft.5\hoffset\centerline{PO Box 231048, Encinitas CA 92024  | (760)-518-7440   |  alexrosengarten@gmail.com | github.com/alxrsngrtn}
+ 
+%\section{OBJECTIVE}
+%Looking to make an meaningful impact as a machine learning engineer or full-stack web developer. 
+ 
+ \section{EDUCATION} University of California, San Diego, {\it La Jolla, CA} \hfill   June 2016 \\
+		  {\sl B.S.} Computer Science \& {\sl B.S.} Cognitive Science (3.6 GPA)
 
-  \section{EDUCATION} University of California, San Diego, La Jolla, CA \hfill   June 2016 \\
-		  {\sl B.S.} Computer Science  (Major GPA: 3.63) \& {\sl B.S.} Cognitive Science (Major GPA: 3.64).
-
-\section{SOFT \\ SKILLS}
-Strong analytical \& problem solving ability, Team player, Humble, Quick-learner, Self-motivated, Innovative
+%\section{SOFT \\ SKILLS}
+%Strong analytical \& problem solving ability, Team player, Humble, Quick-learner, Self-motivated, Innovative
 
 
 \section{TECHNICAL \\ SKILLS} 
@@ -37,12 +44,20 @@ Strong analytical \& problem solving ability, Team player, Humble, Quick-learner
 %								Proficient &  \parbox[t]{2.4in}{C\#, Scala} & \parbox[t]{2.4in}{Docker, Express.js, Ionic/%Cordova, SQL, Apache Spark, Spring MVC, }\\ % Hadoop
 %								% Adobe Creative Suite, Android Studio, Arduino, Eclipse, GDB, Git, Unix, Vim
 %\end{tabular}
+
+
+%Languages & Python, C\#, C++, JavaScript, Java, Matlab/Octave/Julia, F\#, Scala  \\
+%Frontend & Angular.js, Jasmine, Ionic/Cordova, Grunt/Gulp, Webpack \\
+%Backend & SQL, Cassandra, Flask, Node.js, Django, Neo4j, Spring boot \\
+%Data & Keras/Tenserflow/Theano, Scikit-Learn, Apache Spark \\
+%Environment & Git, Docker, Vagrant, Unix/Windows, SVM, Perforce
+
 \begin{tabular}{l l}
-Languages & Python, C\#, C++, JavaScript, Java, Matlab/Octave/Julia, F\#, Scala  \\
-Frontend & Angular.js, Jasmine, Ionic/Cordova, Grunt/Gulp, Webpack \\
-Backend & SQL, Cassandra, Flask, Node.js, Django, Neo4j, Spring boot \\
-Data & Keras/Tenserflow/Theano, Scikit-Learn, Apache Spark \\
-Environment & Git, Docker, Vagrant, Unix/Windows, SVM, Perforce
+Languages & Python, C\#, C++, JavaScript, Java  \\
+Frontend & Angular.js, HTM5/CSS3, Ionic/Cordova, Android  \\
+Backend & SQL, Cassandra, REST, Flask, Node.js, Django, AWS (RDS, Lambda, EC2)\\
+Data & Keras/Theano/Tenserflow, Scikit-Learn, Pandas, Apache Spark \\
+Environment & Docker, Vagrant, POSIX/Windows, Git, SVM, Perforce
 \end{tabular}
 
 
@@ -54,8 +69,17 @@ Environment & Git, Docker, Vagrant, Unix/Windows, SVM, Perforce
                  \item Developing C\# and C++ features for ProSeries, Windows professional tax software. 
                  \item Won business unit hackathon with original idea, presented to senior leadership.
                  \item Leading telemetry project on team, filling an outstanding need of over three years.  
-                 \item Wrote Python tool to analyze application crash logs more precisely in half the time.
+                 \item Build voice command interface in hackathon; currently undergoing user testing.
+                 \item Wrote application crash analysis tool that produces more accurate reports in half the time (Python).
                  \item Managing software-focused book club, leading to process changes and superior technical ability of team.
+                 \end{itemize} 
+
+{\sl Content Developer } \hfill            February - April 2016 \\
+                AI-Master, San Diego, CA
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                \item Wrote interactive tutorials in Python at Machine Learning education start-up.
+                \item Developed lesson plans on Support Vector Machines in Jupyter/IPython Notebooks.
+                \item Established version control system (Github) for content team using open source pull-request model.
                  \end{itemize} 
 
 
@@ -63,23 +87,18 @@ Environment & Git, Docker, Vagrant, Unix/Windows, SVM, Perforce
                 Ingenu, San Diego, CA
                  \begin{itemize}  \itemsep -2pt %reduce space between items
                  \item Developed single-page web application with Angular 1 framework.
+                 \item Reduced application load time by 44\% and KB size by 40\% via minification, lazy loading, and CDN.
                  \item Prototyped, designed, and developed RSS feed sanitizer and aggregator (Spring boot, Angular).
                  \item Rearchitected unit test system (Karma). Wrote unit and integration tests (Jasmine, Protractor/Selenium).
-                 \item Reduced application load time by 44\% and KB size by 40\% via minification, lazy loading, and CDN.
                  \end{itemize} 
 	
-		{\sl Principal Frontend Engineer} \hfill            December 2015 - June 2016 \\
-                Guardiome, La Jolla, CA
-                 \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Developed GUI for a genome exploration tool from scratch (Python). 
-                 \item Integrated with bioinformatics software on a secure, embedded hardware system (Debian).
-                 \end{itemize} 
-
 		{\sl Research Assistant} \hfill            June 2013 - September 2015 \\
                 Natural Computation Laboratory, UCSD Dept. of Cognitive Science, La Jolla, CA
                  \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Developed BrainTag: open source neurofeedback game for children with Autism (Arduino, C). 
+                 \item Build custom CNN layer for learned norm pooling in EEG deep learning application (Theano).
                  \item Created hands-on workshops to teach brain computer interface technology (OpenBCI, Python).
+                 \item Developed BrainTag: open source neurofeedback game for children with Autism (Arduino, C). 
+                 
                  %\item Wrote data visualization and machine learning toolbox for open source brain-computer interface system (Python, Java, C, Javascript). 
                  \end{itemize} 
 	
@@ -105,8 +124,8 @@ Environment & Git, Docker, Vagrant, Unix/Windows, SVM, Perforce
                 {\sl Forward 135 - Full Stack Developer} \hfill 	 April - June 2016 \\
                 Server-Side Web Applications Course, La Jolla, CA 
                  \begin{itemize}  \itemsep -2pt % reduce space between items
-                 \item Built a full-stack architecture for efficient change propagation from the server to the client, part of a research/class project. Worked in a team of three.
-                 \item Project only sends the changes in a database to each client via WebSockets (Javascript ES6, Webpack, Socket.io). 
+                 \item Built a full-stack architecture for efficient change propagation from server to client (JS ES6, Webpack)
+                 \item Implemented MVVM solution that sends only diffs from database to client via WebSockets (Node.js). 
                  \item Performed Incremental View Maintenance via materialized views and database triggers (PostgreSQL). 
                  \end{itemize}
                  
@@ -114,8 +133,8 @@ Environment & Git, Docker, Vagrant, Unix/Windows, SVM, Perforce
                 Embedded Systems Project Course, La Jolla, CA 
                  \begin{itemize}  \itemsep -2pt % reduce space between items
                  \item Worked in team to create In-Ear EEG device for people with epilepsy.
-                 \item Wrote machine learning code with a partner to detect presence of epileptic seizures (Matlab, OpenBCI).
-                 \item Built server that stored 20 minutes of brainwave data once seizures are detected (Python, SQLite). 
+                 \item Used ensemble of SVMs to detect presence of epileptic seizures in realtime data (Matlab, OpenBCI).
+                 \item Prototyped server that stored 20 minutes of brainwave data once seizures are detected (Python, SQL). 
                  \end{itemize}
                 
 \section{COURSEWORK}
@@ -126,13 +145,12 @@ Environment & Git, Docker, Vagrant, Unix/Windows, SVM, Perforce
    $\bullet$ Operating Systems  &  $\bullet$ Programming Languages & $\bullet$ Server-Side Web Applications  \\
      
     \end{tabular}
-     %\footnotetext[1]{Left early for medical reasons}
-    %\footnotetext[1]{Currently Enrolled}
   
                  
 \section{ AWARDS \& ACTIVITIES }  
-	    Third Place Winner, {\it IEEE Brain Computer Interface Hackathon} \hfill September 2016\\  
-   	    Founding Member, {\it Data Science Student Society} \hfill November 2014 - September 2015 \\
+	    Third Place Winner, {\it IEEE Brain Computer Interface Hackathon} \hfill September 2016\\
+	    Trainee, {\it Temporal Dynamics of Learning Center} \hfill January 2014 - June 2015 \\  
+   	    Founding Member, {\it Data Science Student Society} \hfill November 2014 - September \\
 	    Summer Research Scholar, {\it Qualcomm Institute/Calit2} \hfill June - August 2013 \\         
             President, {\it Cognitive Science Student Association} \hfill August 2012 - January 2014 \\
             
