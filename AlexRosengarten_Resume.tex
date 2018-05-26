@@ -12,19 +12,19 @@
 %\parsep=0in
 
 \usepackage[letterpaper, tmargin=.10in, bmargin=.10in, lmargin = .25in, rmargin=1.75in, marginparwidth=.01in]{geometry}
-
+\usepackage{hyperref} 
 
 
 \begin{document}
 
 % Center the name over the entire width of resume:
- \moveleft.5\hoffset\centerline{\large\bf Alexander S. Rosengarten}
+ \moveleft.5\hoffset\centerline{\large\bf Alexander Sky Rosengarten}
 % Draw a horizontal line the whole width of resume:
 
  \moveleft\hoffset\vbox{\hrule width 7.5in height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{alex@aira.io | 5328 Middleton Road, San Diego, CA, 92109 | github.com/alxrsngrtn}
+ \moveleft.5\hoffset\centerline{alex@aira.io | 5328 Middleton Road, San Diego, CA, 92109 | \href{https://github.com/alxrsngrtn/}{github.com/alxrsngrtn}}
  
 %\section{OBJECTIVE}
 %Looking to make an meaningful impact as a machine learning engineer or full-stack web developer. 
@@ -48,48 +48,47 @@
 %Data & Keras/Tenserflow/Theano, Scikit-Learn, Apache Spark \\
 %Environment & Git, Docker, Vagrant, Unix/Windows, SVM, Perforce
 
-\begin{tabular}{l l}
-Languages & Python, Java, C++, C\#, JavaScript, Matlab, Scala/F\# \\
-Client & Android, RxJava, Angular.js, HTML5/CSS3, Bootstrap, Less, WebRTC, Socket.io, WPF \\
-Backend & SQL, Cassandra, MQTT, REST, Flask, Django, Express.js, AWS, Google Cloud \\
-Data & Keras/Tenserflow, Scikit-Learn, Numpy, Pandas, Jupyter, OpenCV, Theano, Apache Spark  \\
-Environment & POSIX/Windows, Docker, Vagrant, Jenkins, Git, SVM
+\begin{tabular}{l@{\hskip 0.25in} l}
+\textbf{Languages} & Python 3, Java 1.8, C++, C\#, JavaScript, Matlab, Scala/F\# \\
+\textbf{Technologies} & Android, Reactive Extensions, SQL/No-SQL, AMQP, REST, AWS, Google Cloud \\
+\textbf{Data Science} & Keras/Tenserflow, Scikit-Learn, OpenCV, Numpy, Pandas, Jupyter, Apache Spark \\
+\textbf{Environment} & POSIX, Vim, JetBrains IDEs, Git, Docker, Vagrant, Windows
 \end{tabular}
 
 % Talk about the challenge that had to be done, the  actions that you took to tackle the challenge, and the results (how things outside of yourself were experienced)		
 \section{WORK EXPERIENCE} 
-{\sl Machine Learning/Fullstack Engineer } \hfill            December 2017 - Present \\
+{\bf Machine Learning/Fullstack Engineer } \hfill            December 2017 - Present \\
                 Aira, La Jolla, CA
                  \begin{itemize}  \itemsep -2pt %reduce space between items
-                \item Built realtime, cloud-based AI agent using NLP, computer vision, and deep learning for NSF grant. Tool designed to assist blind and low-vision users. (Tensorflow, OpenCV, MQTT, Python 3).
-                \item AI agent can describe the color, amount, and type of 100 classes of objects in under half a second.
-		\item Developing a mobile-AI named Chloe for new product line (Android, RxJava, Java 8). 
-		\item Building core dialog engine. Includes a STT/TTS system, intent matching, and conversation state management. 
-                \item Built voice telemetry system, captures speech utterances from users and the device. Speech simulation added for automated testing (AWS IoT, MQTT, DynamoDB).
-                \item Implemented fisheye correction in the camera driver layer (Android Native, OpenCV, C++). 
-                \item Created wake word detector and audio processing pipeline (Tensorflow, Android, Python 3)
+		\item Developing {\bf Chloe}, a mobile-AI for new product line (Android, RxJava). 
+		\item Building {\bf core dialog engine}. Includes a STT/TTS system and conversation state management. Used to build features such as bluetooth pairing, calling an agent, call rating purely throuch a voice interface. 
+		 \item Built cloud-based, \href{https://github.com/aira/object_detector}{{\bf real-time object detector}}.  AI agent used NLP, computer vision, and deep learning for NSF grant, designed to assist blind/low-vision users. (Tensorflow, OpenCV, MQTT).
+		\item AI agent can describe the color, amount, and type of 100 classes of objects in under half a second.
+                \item Created {\bf wake word detector}. Built a CNN model and audio processing pipeline (Tensorflow).
+                \item Built a {\bf telemtry system} that captures speech utterances from users and the device. Speech simulation added for automated testing (AWS IoT, MQTT, DynamoDB).
+		\item Started a weekly lecture series to teach engineers machine learning. 
                  \end{itemize} 
 
 
-{\sl Research Assistant } \hfill            January 2018 - Present \\
+{\bf Research Assistant } \hfill            January 2018 - Present \\
                 UCSD Nanoengineering Department, La Jolla, CA
                  \begin{itemize}  \itemsep -2pt %reduce space between items
-                \item Building a system to classify crystal structure types based on images of defraction patterns (Keras).
-                \item Convolution neural network correctly classifies crystal structures over 96\% of the time. 
+                \item Building {\bf crystal structure classifier}. Built a data pipeline and model to infer crystal structure types based on images of defraction patterns, achieved 94\% accuracy accross four classes (Keras/Tensorflow).
+                \item {\bf Teaching graduate students} programming best practices and machine learning concepts.  
                  \end{itemize} 
 
-		{\sl Software Engineer} \hfill            August 2016 - November 2017 \\
+		{\bf Software Engineer} \hfill            August 2016 - November 2017 \\
                 Intuit, San Diego, CA
                  \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Developed C\# and C++ features for ProSeries, Windows professional tax software. 
-                 \item Won business unit hackathon with novel idea for a telemetry system, presented to senior leadership.
-                 \item Lead telemetry project, filling an outstanding need of over three years. Project was key to instrumenting new designs and refactoring initiatives. 
-                 \item Wrote application crash analysis tool that produces more accurate reports in half the time (Python 3).
+                 \item Developed C\# and C++ features for {\bf ProSeries}, Windows professional tax software. 
+                 \item {\bf Won business unit hackathon} with novel idea for a telemetry system, presented to senior leadership.
+                 \item {\bf Lead telemetry project}, which was an outstanding need for over three years. Telemetry system is critical for new design and refactoring initiatives as well as making important business decisons.
+                 \item Wrote \href{https://github.com/alxrsngrtn/CrashAnalysisTool}{{\bf application crash analysis tool}} that produces more accurate reports in half the time (Python).
                  \end{itemize} 
 
 
 
-%{\sl Content Developer } \hfill            February - April 2016 \\
+%{\bf Content Developer } \hfill            February - April 2016 \\
 %                AI-Master, San Diego, CA
 %                 \begin{itemize}  \itemsep -2pt %reduce space between items
 %                \item Wrote interactive tutorials in Python at Machine Learning education start-up.
@@ -98,25 +97,25 @@ Environment & POSIX/Windows, Docker, Vagrant, Jenkins, Git, SVM
 %                 \end{itemize} 
 %
 
-		{\sl Software Engineering Intern} \hfill            March - August 2016 \\
+		{\bf Software Engineering Intern} \hfill            March - August 2016 \\
                 Ingenu, San Diego, CA
                  \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Developed single-page web application with Angular 1 framework.
+                 \item Developed {\bf Supernova}, a single-page web application to manage IoT devices (Angular 1).
                  \item Reduced application load time by 44\% and KB size by 40\% via minification, lazy loading, and CDN.
-                 \item Prototyped, designed, and developed RSS feed sanitizer and aggregator (Spring boot, Angular).
+                 \item Prototyped, designed, and developed {\bf RSS feed widget} (Spring boot, Angular).
                  \end{itemize} 
 	
-		{\sl Research Assistant} \hfill            June 2013 - September 2015 \\
+		{\bf Research Assistant} \hfill            June 2013 - September 2015 \\
                 Natural Computation Laboratory, UCSD Dept. of Cognitive Science, La Jolla, CA
                  \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Created in-ear EEG device to detect seizures for people with epilepsy (SVMs, OpenBCI).
-                 \item Build custom neural network layer for learned-norm pooling in EEG research application (Theano).
-                 \item Created hands-on workshops to teach brain computer interface technology (OpenBCI, Python).
-                 \item Developed BrainTag: a lasertag-based neurofeedback game for children with Autism (Arduino, C). 
+                 \item Created \href{https://youtu.be/UMACp0fc9TA}{{\bf in-ear EEG}} device to detect seizures for people with epilepsy (SVMs, OpenBCI).
+                 \item Build custom neural network layer for \href{https://github.com/alxrsngrtn/LearnedNormPooling}{{\bf learned-norm pooling}} in EEG research application (Theano).
+                 \item Created hands-on workshops to {\bf teach brain computer interface technology} (OpenBCI, Python).
+                 \item Developed \href{https://github.com/alxrsngrtn/BrainTag}{{\bf BrainTag}}: a lasertag-based neurofeedback game for children with Autism (Arduino, C). 
                  %\item Wrote data visualization and machine learning toolbox for open source brain-computer interface system (Python, Java, C, Javascript). 
                  \end{itemize} 
 	
-		%{\sl Computer Science Tutor} \hfill 	April - June 2013, August 2014 \\
+		%{\bf Computer Science Tutor} \hfill 	April - June 2013, August 2014 \\
 		%UCSD Computer Science Department, La Jolla, CA
                  %\begin{itemize}  \itemsep -2pt % reduce space between 
                  %\item Spring 2013, Matlab Programming: Tutored students, debugged code, graded exams and assignments.
@@ -125,15 +124,16 @@ Environment & POSIX/Windows, Docker, Vagrant, Jenkins, Git, SVM
                  
     
 \section{PROJECTS}
-                 {\sl Huh, Computer Music (HCM) } \hfill 	 October 2017 - Present 
+                 {\bf Huh, Computer Music (HCM) } \hfill 	 October 2017 - Present 
                  \begin{itemize}  \itemsep -2pt % reduce space between items
-                 \item Developing open-source Python 3 library for realtime music generation.  
+                 \item Developing \href{https://github.com/alxrsngrtn/huh-computer-music}{open-source} Python 3 library for realtime music generation.  
+		 \item Presented {\bf ``\href{https://youtu.be/bTAFl8P2DkE?t=28m47s}{Music from Chaos: Audiofying the Lorenz Attractor}''} at PyCon, 2018.
                  \item Library utilizes functional reactive programming for live streaming (RxPy).
                  \item Tool aims to mimic an analog synthesizer through functional composition (Numpy, Scipy).
                  \end{itemize}
 
                  % include quantitative results
-%                {\sl Forward 135 - Full Stack Developer} \hfill 	 April - June 2016 \\
+%                {\bf Forward 135 - Full Stack Developer} \hfill 	 April - June 2016 \\
 %                Server-Side Web Applications Course, La Jolla, CA 
 %                 \begin{itemize}  \itemsep -2pt % reduce space between items
 %                 \item Built a full-stack architecture for efficient change propagation from server to client (JS ES6, Webpack)
@@ -141,7 +141,7 @@ Environment & POSIX/Windows, Docker, Vagrant, Jenkins, Git, SVM
 %                 \item Performed Incremental View Maintenance via materialized views and database triggers (PostgreSQL). 
 %                 \end{itemize}
                  
-% {\sl In-Ear EEG - Software Team Member} \hfill 	 April - June 2015 \\
+% {\bf In-Ear EEG - Software Team Member} \hfill 	 April - June 2015 \\
 %                Embedded Systems Project Course, La Jolla, CA 
 %                 \begin{itemize}  \itemsep -2pt % reduce space between items
 %                 \item Worked in team to create In-Ear EEG device for people with epilepsy.
@@ -158,12 +158,11 @@ Environment & POSIX/Windows, Docker, Vagrant, Jenkins, Git, SVM
 %    \end{tabular}
                  
 \section{ AWARDS \& ACTIVITIES }  
-	    Third Place Winner, {\it IEEE Brain Computer Interface Hackathon} \hfill September 2016\\
-	    Trainee, {\it Temporal Dynamics of Learning Center} \hfill January 2014 - June 2015 \\  
-   	    Founding Member, {\it Data Science Student Society} \hfill November 2014 - September 2015 \\
-	    Computer Science Tutor, {\it UCSD CSE Department} \hfill Spring 2013, Summer 2014 \\
-	    Summer Research Scholar, {\it Qualcomm Institute/Calit2} \hfill June - August 2013 \\   
-            President, {\it Cognitive Science Student Association} \hfill August 2012 - January 2014 \\
+	    {\bf Third Place Winner}, {\it IEEE Brain Computer Interface Hackathon} \hfill September 2016\\
+	    {\bf Trainee}, {\it Temporal Dynamics of Learning Center} \hfill January 2014 - June 2015 \\  
+	    {\bf Computer Science Tutor}, {\it UCSD CSE Department} \hfill Spring 2013, Summer 2014 \\
+	    {\bf Summer Research Scholar}, {\it Qualcomm Institute/Calit2} \hfill June - August 2013 \\   
+            {\bf President}, {\it Cognitive Science Student Association} \hfill August 2012 - January 2014 \\
             
 %\end{resume}
 \end{document}
