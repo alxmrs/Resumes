@@ -1,19 +1,7 @@
 % LaTeX resume using res.cls
 \documentclass[line,margin]{res} 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-
-
-%\topmargin=-.10in
-%\oddsidemargin -.5in
-%\evensidemargin -.5in
-%\textwidth=6.0in
-%\itemsep=0in
-%\parsep=0in
-
 \usepackage[letterpaper, tmargin=.10in, bmargin=.10in, lmargin = .25in, rmargin=1.75in, marginparwidth=.01in]{geometry}
 \usepackage{hyperref} 
-
 
 \begin{document}
 
@@ -26,11 +14,10 @@
 % Draw a horizontal line the whole width of resume:
  \moveleft\hoffset\vbox{\hrule width 7.5in height 1pt}\smallskip
  
-%\section{OBJECTIVE}
-%Looking to make an meaningful impact as a machine learning engineer or full-stack web developer. 
- 
+% ---------------- EDUCATION ----------------
 \section{EDUCATION}  {\sl B.S.} Computer Science \& {\sl B.S.} Cognitive Science \hfill UC San Diego --  La Jolla, CA  \hfill Class of 2016 
 
+% ---------------- TECHNICAL SKILLS ----------------
 \section{TECHNICAL \\ SKILLS} 
 \begin{tabular}{l@{\hskip 0.25in} l}
 \textbf{Languages} & Python, Java, C++, C\#, JavaScript, Scala/F\#/OCaml \\
@@ -39,6 +26,7 @@
 \textbf{Environment} & POSIX, Vim, JetBrains IDEs, Git, Docker, Vagrant, Jira/Confluence, Windows
 \end{tabular}
 
+% ---------------- WORK EXPERIENCE ----------------
 % Talk about the challenge that had to be done, the  actions that you took to tackle the challenge, and the results (how things outside of yourself were experienced)		
 \section{WORK EXPERIENCE} 
 {\bf Machine Learning/Software Engineer } \hfill Nov 2017 - Present \\
@@ -86,6 +74,7 @@
    \end{itemize} 
 	
     
+% ---------------- PROJECTS ----------------
 \section{PROJECTS}
 {\bf Research Assistant } \hfill            Jan 2018 - Present \\
   Vecchio Group, UCSD Nanoengineering Department -- La Jolla, CA
@@ -103,9 +92,11 @@
     \item Tool aims to mimic an analog synthesizer through functional composition (Numpy, Scipy).
   \end{itemize}
 
+% ---------------- INTERESTS ----------------
 \section{INTERESTS}
 Artificial Intelligence, Biometrics, Functional Programming, Category Theory, Teaching, Accessibility
                  
+% ---------------- ACTIVIES & AWARDS ----------------
 %\section{ AWARDS \& ACTIVITIES }  
 %  {\bf Third Place Winner}, {\it IEEE Brain Computer Interface Hackathon} \hfill September 2016\\
 %  {\bf Computer Science Tutor}, {\it UCSD CSE Department} \hfill Spring 2013, Summer 2014 \\
