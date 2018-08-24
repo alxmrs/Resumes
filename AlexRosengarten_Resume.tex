@@ -3,13 +3,18 @@
 \usepackage[letterpaper, tmargin=.10in, bmargin=.10in, lmargin = .25in, rmargin=1.75in, marginparwidth=.01in]{geometry}
 \usepackage{hyperref} 
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
 \begin{document}
 
 % Center the name over the entire width of resume:
  \moveleft.5\hoffset\centerline{\large\bf Alexander Sky Rosengarten}
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{alex.rosengarten@gmail.com | \href{https://github.com/alxrsngrtn/}{github.com/alxrsngrtn} | (760) 518-7440 | San Diego, CA }
+ \moveleft.5\hoffset\centerline{alex.rosengarten@gmail.com | \href{https://github.com/alxrsngrtn/}{github.com/alxrsngrtn} | (760) 518-7440 | Oakland, CA }
 
 % Draw a horizontal line the whole width of resume:
  \moveleft\hoffset\vbox{\hrule width 7.5in height 1pt}\smallskip
@@ -22,23 +27,25 @@
 \begin{tabular}{l@{\hskip 0.25in} l}
 \textbf{Languages} & Python, Java, C++, C\#, JavaScript, Scala/F\#/OCaml \\
 \textbf{Technologies} & Android, Reactive Extensions, SQL/No-SQL, AMQP, REST, AWS, Google Cloud \\
-\textbf{Data Science} & Keras/Tenserflow, Scikit-Learn, OpenCV, Numpy, Pandas, Jupyter, Apache Spark \\
-\textbf{Environment} & POSIX, Vim, JetBrains IDEs, Git, Docker, Vagrant, Jira/Confluence, Windows
+\textbf{Data Science} & Keras/Tenserflow, Scikit-Learn, OpenCV, PyData Stack, Apache Spark \\
+\textbf{Environment} & POSIX, Vim, JetBrains IDEs, Git, Docker, Travis/Jenkins, Jira/Confluence, Windows
 \end{tabular}
 
 % ---------------- WORK EXPERIENCE ----------------
 % Talk about the challenge that had to be done, the  actions that you took to tackle the challenge, and the results (how things outside of yourself were experienced)		
 \section{WORK EXPERIENCE} 
 {\bf Machine Learning/Software Engineer } \hfill Nov 2017 - Present \\
-  Aira -- La Jolla, CA
+  Aira -- La Jolla/San Jose, CA
   \begin{itemize}  \itemsep -2pt %reduce space between items
     \item Developing {\bf Chloe}, a mobile-AI for new product line (Android, RxJava). 
-    \item Building {\bf core dialog engine}. Includes a STT/TTS system and conversation state management. Built features such as bluetooth pairing, calling an agent, and call rating purely throuch a voice interface. 
+    \item Built {\bf core dialog engine}. Includes a STT/TTS system and conversation state management. Built features such as bluetooth pairing, calling an agent, and call rating purely throuch a voice interface. 
     \item Built cloud-based, \href{https://github.com/aira/object_detector}{{\bf real-time object detector}}.  AI agent used NLP, computer vision, and deep learning for NSF grant, designed to assist blind/low-vision users. (Tensorflow, OpenCV, MQTT).
     \item AI agent can describe the color, amount, and type of 100 classes of objects in milliseconds.
+    \item Project lead for {\bf Horus}, a Python CLI for ML video analytics (STT \& object detection).
+    \item Creating {\bf image tagging game} to generate dataset integral to company IP (Chalice, Vue.js).
     \item Created {\bf wake word detector}. Built a CNN model and audio processing pipeline (Tensorflow).
     \item Built a {\bf telemetry system} that captures speech utterances from users and the device. Speech simulation added for automated testing (AWS IoT, MQTT, DynamoDB).
-    \item Added {\bf fisheye correction} in glasses camera driver (OpenCV, Android Native).
+   % \item Added {\bf fisheye correction} in glasses camera driver (OpenCV, Android Native).
     \item Started a weekly lecture series to teach engineers machine learning. 
   \end{itemize} 
 
@@ -69,7 +76,7 @@
      \item Built custom neural network layer for \href{https://github.com/alxrsngrtn/LearnedNormPooling}{{\bf learned-norm pooling}} in EEG research application (Theano).
      \item Created hands-on workshops to {\bf teach brain computer interface technology} (OpenBCI, Python).
      \item Developed \href{https://github.com/alxrsngrtn/BrainTag}{{\bf BrainTag}}: a lasertag-based neurofeedback game for children with Autism (Arduino, C). 
-     \item Awarded Summer Research Scholar at the Qualcomm Institute/Calit2, presented research at Undergraduate Research Conference.
+     \item Presented research at Undergraduate Research Conference.
     %\item Wrote data visualization and machine learning toolbox for open source brain-computer interface system (Python, Java, C, Javascript). 
    \end{itemize} 
 	
@@ -94,7 +101,7 @@
 
 % ---------------- INTERESTS ----------------
 \section{INTERESTS}
-Artificial Intelligence, Biometrics, Functional Programming, Category Theory, Teaching, Accessibility
+Artificial Intelligence, Biometrics, Functional Programming, Teaching, Accessibility
                  
 % ---------------- ACTIVIES & AWARDS ----------------
 %\section{ AWARDS \& ACTIVITIES }  
