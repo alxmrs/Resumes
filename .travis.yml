@@ -13,4 +13,5 @@ deploy:
   file: _build/AlexRosengarten_Resume.pdf
   skip_cleanup: true
   on:
+   branch: staging
    tags: true 
