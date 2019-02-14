@@ -1,12 +1,15 @@
 % LaTeX resume using res.cls
 \documentclass[line,mm]{res} 
-\usepackage[letterpaper, tmargin=.10in, bmargin=.10in, lmargin = .25in, rmargin=1.75in, marginparwidth=.01in]{geometry}
+\usepackage[letterpaper, tmargin=.10in, bmargin=.10in, lmargin = .25in, rmargin=1in, marginparwidth=.01in]{geometry}
 \usepackage{hyperref} 
+%\usepackage[backend=biber, style=alphabetic, citestyle=authoryear]{biblatex}
 
 \hypersetup{
     colorlinks=true,
     linkcolor=blue
 }
+
+%\addbibresource{citations.bib}
 
 \begin{document}
 
@@ -25,9 +28,9 @@
 % ---------------- TECHNICAL SKILLS ----------------
 \section{TECHNICAL \\ SKILLS} 
 \begin{tabular}{l@{\hskip 0.25in} l}
-\textbf{Languages} & Python, Java, C++, JavaScript, C\#, Scala/F\#/OCaml \\
-\textbf{Technologies} & Android, Reactive Extensions, Spring Boot, Vue.js, SQL/No-SQL, AMQP, REST, AWS, Google Cloud \\
-\textbf{Data Science} & Keras/Tenserflow, Scikit-Learn, OpenCV, PyData Stack, Apache Spark \\
+\textbf{Languages} & Python, Java, Typescript, C++, JavaScript, C\#, Scala/F\#/OCaml \\
+\textbf{Technologies} & Android, Vue.js, Spring Boot, Reactive Extensions,  SQL/No-SQL, AMQP, REST, AWS, GCP \\
+\textbf{Data Science} & Keras/Tensorflow, Scikit-Learn, OpenCV, PyData Stack, Apache Spark \\
 \textbf{Environment} & POSIX, Vim, JetBrains IDEs, Git, Docker, Travis/Jenkins, Jira/Confluence, Windows
 \end{tabular}
 
@@ -35,19 +38,20 @@
 % Talk about the challenge that had to be done, the  actions that you took to tackle the challenge, and the results (how things outside of yourself were experienced)		
 \section{WORK EXPERIENCE} 
 {\bf Machine Learning/Software Engineer } \hfill Nov 2017 - Present \\
-  Aira -- La Jolla/San Jose, CA
+  Aira Tech Crop -- La Jolla/San Jose, CA
   \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Developing {\bf Chloe}, a mobile-AI for new product line (Android, RxJava). 
-    \item Built {\bf core dialog engine}. Includes a STT/TTS system and conversation state management. Built features such as bluetooth pairing, calling an agent, and call rating purely through a voice interface. 
+    \item Aira helps blind and low-vision users access visual information via remote assistance with smart glasses. 
+    \item Built {\bf core dialog engine (Chloe)} on Android. Integrates STT/TTS system and conversation state management. Built features such as bluetooth pairing, calling an agent, and call rating purely through a voice interface. 
     \item Built cloud-based, \href{https://github.com/aira/object_detector}{{\bf real-time object detector}}.  AI agent used NLP, computer vision, and deep learning for NSF grant, designed to assist blind/low-vision users. (Tensorflow, OpenCV, MQTT).
-    \item AI agent can describe the color, amount, and type of 100 classes of objects in milliseconds.
-    \item Project lead for {\bf Horus}, a Python CLI for ML video analytics (STT \& object detection).
-    \item Creating {\bf image tagging game} to generate dataset integral to company IP (Spring Boot, Vue.js).
-    \item Created {\bf wake word detector}. Built a CNN model and audio processing pipeline (Tensorflow).
-    \item Making important design \& architecture decisions on AI products (e.g. inter-day call forcasting, document OCR reading).
-   % \item Built a {\bf telemetry system} that captures speech utterances from users and the device. Speech simulation added for automated testing (AWS IoT, MQTT, DynamoDB).
-   % \item Added {\bf fisheye correction} in glasses camera driver (OpenCV, Android Native).
-   % \item Started a weekly lecture series to teach engineers machine learning. 
+    \item Technical lead for prototype of {\bf indoor navigation system} (OpenSfM, PCL, Python, Android, ArchGIS). 
+    \item Project lead for {\bf Horus}, a batch ETL \& analytics tool for video streams (Python, Docker, AWS).
+    \item Creating {\bf image tagging game} to generate dataset integral to company IP (Spring Boot, Vue.js, Typescript).
+    \item Created {\bf currency classifier}. Built CNN model. Deployed on Android with Firebase (Tensorflow, Android).
+    \item Built {\bf telemetry system}, captures user \& Chloe utterances. Speech simulation key to test automation (AWS IoT).
+    \item Making important design \& architecture decisions on AI products (e.g. inter-day call forcasting, OCR reading).
+    %\item Added {\bf fisheye correction} in glasses camera driver (OpenCV, Android Native).
+    \item Leading agile rituals such as daily standups, sprint plannings and retrospectives.
+    \item Started a weekly lecture series to teach engineers machine learning. 
   \end{itemize} 
 
 
@@ -61,13 +65,6 @@
     \item Ideas I came up with led to a 50\% reduction in application crashes from prior year. 
   \end{itemize} 
 
-
-{\bf Software Engineering Intern} \hfill            Mar - Aug 2016 \\
-  Ingenu -- San Diego, CA
-  \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Developed {\bf Supernova}, a single-page web application to manage IoT devices (Angular 1).
-    \item Reduced application load time by 44\% and KB size by 40\% via minification, lazy loading, and CDN.
-  \end{itemize} 
 	
 {\bf Research Assistant} \hfill            Jun 2013 - Sep 2015 \\
    Natural Computation Laboratory, UCSD Cognitive Science Department -- La Jolla, CA
@@ -85,13 +82,15 @@
 \section{PROJECTS}
 {\bf Research Assistant } \hfill            Jan 2018 - Present \\
   Vecchio Group, UCSD Nanoengineering Department -- La Jolla, CA
-  \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Building {\bf crystal structure classifier}. Identifies 11 classes with ~99\% accuracy (Keras/Tensorflow).
-    \item {\bf Teaching graduate students} programming best-practices and machine learning concepts.  
+  \begin{itemize}  \itemsep -2pt %reduce space between items   
+     \item Published \href{https://arxiv.org/ftp/arxiv/papers/1902/1902.03682.pdf}{{\bf Paradigm shift in electron-based crystallography via machine learning}}. (Tensorflow). 
+     \item Used OOP design principles for framework to track hyperparameters, ML pipelines in version control (Python)
+     \item {\bf Teaching graduate students} programming best-practices and machine learning concepts.  
   \end{itemize} 
 
 
-{\bf Huh, Computer Music (HCM) } \hfill 	 Oct 2017 - Present 
+{\bf Co-Creator of Computer Music Library} \hfill 	 Oct 2017 - Present  \\
+  Huh, Computer Music (HCM) -- San Diego, CA
   \begin{itemize}  \itemsep -2pt % reduce space between items
     \item Developing \href{https://github.com/alxrsngrtn/huh-computer-music}{{\bf open-source}} Python 3 library for real-time {\bf music generation}.  
     \item Presented {\bf ``\href{https://youtu.be/bTAFl8P2DkE?t=28m47s}{Music from Chaos: Audiofying the Lorenz Attractor}''} at PyCon, 2018.
@@ -109,12 +108,6 @@ Artificial Intelligence, Biometrics, Functional Programming, Teaching, Accessibi
 %  {\bf Computer Science Tutor}, {\it UCSD CSE Department} \hfill Spring 2013, Summer 2014 \\
 %  {\bf Summer Research Scholar}, {\it Qualcomm Institute/Calit2} \hfill June - August 2013 \\   
 %  {\bf President}, {\it Cognitive Science Student Association} \hfill August 2012 - January 2014 \\
-            
+
 \end{document}
-
-
-
-
-
-
 
