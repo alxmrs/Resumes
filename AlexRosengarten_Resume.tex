@@ -6,7 +6,8 @@
 
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue
+    linkcolor=blue,
+    urlcolor=blue
 }
 
 %\addbibresource{citations.bib}
@@ -14,7 +15,7 @@
 \begin{document}
 
 % Center the name over the entire width of resume:
- \moveleft.5\hoffset\centerline{\large\bf Alexander Sky Rosengarten}
+ \moveleft.5\hoffset\centerline{\large\bf \href{http://alexrosengarten.com/}{Alexander Sky Rosengarten}}
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
  \moveleft.5\hoffset\centerline{alex.rosengarten@gmail.com | \href{https://github.com/alxrsngrtn/}{github.com/alxrsngrtn} | (760) 518-7440 | Oakland, CA }
@@ -26,70 +27,70 @@
 \section{EDUCATION}  {\sl B.S.} Computer Science \& {\sl B.S.} Cognitive Science \hfill UC San Diego --  La Jolla, CA  \hfill Class of 2016 
 
 % ---------------- TECHNICAL SKILLS ----------------
-\section{TECHNICAL \\ SKILLS} 
+\section{TECHNICAL SKILLS} 
 \begin{tabular}{l@{\hskip 0.25in} l}
-\textbf{Languages} & Python, Java, Typescript, C++, JavaScript, C\#, Scala/F\#/OCaml \\
-\textbf{Technologies} & Android, Vue.js, Spring Boot, Reactive Extensions,  SQL/No-SQL, AMQP, REST, AWS, GCP \\
+\textbf{Languages} & Python, Java, Typescript, C++, JavaScript, C\#, Scala, OCaml, F\# \\
+\textbf{Technologies} & Android, Vue.js, Flask, Spring Boot, Reactive Extensions,  SQL/No-SQL, REST, AWS, GCP \\
 \textbf{Data Science} & Keras/Tensorflow, Scikit-Learn, OpenCV, PyData Stack, Apache Spark \\
-\textbf{Environment} & POSIX, Vim, JetBrains IDEs, Git, Docker, Travis/Jenkins, Jira/Confluence, Windows
+\textbf{Environment} & POSIX, Vim, JetBrains IDEs, Git, Docker, Travis, Jenkins, Jira, Confluence, Windows
 \end{tabular}
 
 % ---------------- WORK EXPERIENCE ----------------
 % Talk about the challenge that had to be done, the  actions that you took to tackle the challenge, and the results (how things outside of yourself were experienced)		
 \section{WORK EXPERIENCE} 
-{\bf Machine Learning/Software Engineer } \hfill Nov 2017 - Present \\
-  Aira Tech Crop -- La Jolla/San Jose, CA
+{\bf Software Engineer in Machine Learning } \hfill 2017--11 | Present \\
+  Aira Tech Crop -- La Jolla \& San Jose, CA \\
+  \textit{ Aira helps blind and low-vision users access visual information via remote assistance with smart glasses. }
   \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Aira helps blind and low-vision users access visual information via remote assistance with smart glasses. 
-    \item Built {\bf core dialog engine (Chloe)} on Android. Integrates STT/TTS system and conversation state management. Built features such as bluetooth pairing, calling an agent, and call rating purely through a voice interface. 
-    \item Built cloud-based, \href{https://github.com/aira/object_detector}{{\bf real-time object detector}}.  AI agent used NLP, computer vision, and deep learning for NSF grant, designed to assist blind/low-vision users. (Tensorflow, OpenCV, MQTT).
+    \item Built {\bf core dialog engine (Chloe)} on Android. Integrated STT/TTS system and conversation state management. Built features such as bluetooth pairing, calling an agent, and call rating purely through a voice interface (Java 8). 
+    \item Developed cloud-based, \href{https://github.com/aira/object_detector}{{\bf real-time object detector}}.  AI agent used NLP, computer vision, and deep learning for NSF grant, designed to assist blind \& low-vision users (Tensorflow, OpenCV, MQTT).
     \item Technical lead for prototype of {\bf indoor navigation system} (OpenSfM, PCL, Python, Android, ArchGIS). 
     \item Project lead for {\bf Horus}, a batch ETL \& analytics tool for video streams (Python, Docker, AWS).
     \item Creating {\bf image tagging game} to generate dataset integral to company IP (Spring Boot, Vue.js, Typescript).
     \item Created {\bf currency classifier}. Built CNN model. Deployed on Android with Firebase (Tensorflow, Android).
     \item Built {\bf telemetry system}, captures user \& Chloe utterances. Speech simulation key to test automation (AWS IoT).
-    \item Making important design \& architecture decisions on AI products (e.g. inter-day call forcasting, OCR reading).
+    \item Making important design \& architecture decisions on AI products, e.g. inter-day call forcasting, OCR reading.
     %\item Added {\bf fisheye correction} in glasses camera driver (OpenCV, Android Native).
     \item Leading agile rituals such as daily standups, sprint plannings and retrospectives.
-    \item Started a weekly lecture series to teach engineers machine learning. 
+    \item Founded weekly lecture series to teach engineers machine learning. 
   \end{itemize} 
 
 
-{\bf Software Engineer} \hfill Aug 2016 - Nov 2017 \\
+{\bf Software Engineer} \hfill 2016--08 | 2017--11 \\
   Intuit -- San Diego, CA
   \begin{itemize}  \itemsep -2pt %reduce space between items
     \item Developed features for {\bf ProSeries}, Windows professional tax software (C\#, C++).
     \item {\bf Won business unit hackathon} with novel idea for a telemetry system, presented to senior leadership.
     \item {\bf Led telemetry project}. Took initiative to modernize legacy application with data.
-    \item Wrote \href{https://github.com/alxrsngrtn/CrashAnalysisTool}{{\bf application crash analysis tool}}, produced more accurate reports in half the time (Python).
-    \item Ideas I came up with led to a 50\% reduction in application crashes from prior year. 
+    \item Implemented \href{https://github.com/alxrsngrtn/CrashAnalysisTool}{{\bf application crash analysis tool}}, produced more accurate reports in half the time (Python).
+    \item Ideas I designed and executed led to a 50\% reduction in application crashes from prior year. 
   \end{itemize} 
 
 	
-{\bf Research Assistant} \hfill            Jun 2013 - Sep 2015 \\
-   Natural Computation Laboratory, UCSD Cognitive Science Department -- La Jolla, CA
+{\bf Research Assistant} \hfill            2013--06 | 2015--09 \\
+   Natural Computation Laboratory (de Sa Lab), UCSD Cognitive Science Department -- La Jolla, CA
    \begin{itemize}  \itemsep -2pt %reduce space between items
      \item Created \href{https://youtu.be/UMACp0fc9TA}{{\bf in-ear EEG}} device to detect seizures for people with epilepsy (SVMs, OpenBCI).
      \item Built custom neural network layer for \href{https://github.com/alxrsngrtn/LearnedNormPooling}{{\bf learned-norm pooling}} in EEG research application (Theano).
      \item Created hands-on workshops to {\bf teach brain computer interface technology} (OpenBCI, Python).
-     \item Developed \href{https://github.com/alxrsngrtn/BrainTag}{{\bf BrainTag}}: a lasertag-based neurofeedback game for children with Autism (Arduino, C). 
-     \item Presented research at Undergraduate Research Conference.
+     \item Developed \href{https://github.com/alxrsngrtn/BrainTag}{{\bf BrainTag}}, a lasertag-based neurofeedback game for children with Autism (Arduino, C). 
+     \item Presented research at UCSD Undergraduate Research Conference 2015.
     %\item Wrote data visualization and machine learning toolbox for open source brain-computer interface system (Python, Java, C, Javascript). 
    \end{itemize} 
 	
     
 % ---------------- PROJECTS ----------------
 \section{PROJECTS}
-{\bf Research Assistant } \hfill            Jan 2018 - Present \\
+{\bf Research Assistant } \hfill            2018--01 | Present \\
   Vecchio Group, UCSD Nanoengineering Department -- La Jolla, CA
   \begin{itemize}  \itemsep -2pt %reduce space between items   
-     \item Published \href{https://arxiv.org/ftp/arxiv/papers/1902/1902.03682.pdf}{{\bf Paradigm shift in electron-based crystallography via machine learning}}. (Tensorflow). 
-     \item Used OOP design principles for framework to track hyperparameters, ML pipelines in version control (Python)
+     \item Published \href{https://arxiv.org/ftp/arxiv/papers/1902/1902.03682.pdf}{{\bf ``Paradigm Shift in Electron-Based Crystallography via Machine Learning''}} (Tensorflow). 
+     \item Used OOP design principles for framework to track hyperparameters, ML pipelines in version control (Python).
      \item {\bf Teaching graduate students} programming best-practices and machine learning concepts.  
   \end{itemize} 
 
 
-{\bf Co-Creator of Computer Music Library} \hfill 	 Oct 2017 - Present  \\
+{\bf Co-Creator of Computer Music Library} \hfill 	 2017--10 | Present  \\
   Huh, Computer Music (HCM) -- San Diego, CA
   \begin{itemize}  \itemsep -2pt % reduce space between items
     \item Developing \href{https://github.com/alxrsngrtn/huh-computer-music}{{\bf open-source}} Python 3 library for real-time {\bf music generation}.  
